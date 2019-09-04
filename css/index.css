@@ -215,6 +215,9 @@ img {
   color: #212529;
   text-decoration: none;
 }
+.search {
+  visibility: hidden;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed #C0C0C0;
@@ -347,6 +350,34 @@ img {
   }
 }
 .home .content-pick .destination .btn:hover {
+  background: #FFFFFF;
+  color: #17A2B8;
+}
+.home #scroll-button {
+  visibility: hidden;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 45px;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .home #scroll-button {
+    width: 100%;
+  }
+}
+.home #scroll-button:hover {
   background: #FFFFFF;
   color: #17A2B8;
 }
